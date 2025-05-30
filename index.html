@@ -1,0 +1,268 @@
+<!-- Save this file as index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jacqueline 💌</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      font-family: 'Georgia', serif;
+      color: black;
+      overflow-x: hidden;
+      text-align: center;
+    }
+
+    .heart {
+      font-size: 80px;
+      color: red;
+      animation: blink 1s infinite;
+      margin-top: 30px;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-top: 20px;
+      text-shadow: 2px 2px 4px #fff;
+    }
+
+    .buttons {
+      margin: 40px;
+    }
+
+    button {
+      font-size: 22px;
+      padding: 12px 24px;
+      margin: 15px;
+      border-radius: 12px;
+      border: none;
+      cursor: pointer;
+      background-color: white;
+      color: black;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    }
+
+    button:hover {
+      transform: scale(1.1);
+    }
+
+    #noBtn {
+      position: relative;
+    }
+
+    .letter {
+      margin-top: 40px;
+      font-size: 60px;
+      cursor: pointer;
+    }
+
+    #letterPopup {
+      display: none;
+      position: fixed;
+      top: 5%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      max-width: 700px;
+      height: 80vh;
+      background: url("vintage_old_paper_letter_by_magdadm_da8tovf-fullview.jpg") no-repeat center center;
+      background-size: cover;
+      padding: 60px 30px;
+      border: 2px solid #444;
+      border-radius: 12px;
+      z-index: 999;
+      color: black;
+      font-size: 18px;
+      line-height: 1.6;
+      overflow-y: auto;
+    }
+
+    .photo img {
+      width: 200px;
+      border-radius: 50%;
+      border: 5px solid white;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    #finalMsg {
+      display: none;
+      font-size: 28px;
+      margin-top: 30px;
+      color: darkgreen;
+    }
+
+    #closeLetter {
+      position: absolute;
+      top: 8px;
+      right: 15px;
+      font-size: 24px;
+      font-weight: bold;
+      color: red;
+      cursor: pointer;
+    }
+
+    .balloon, .confetti {
+      position: absolute;
+      animation: float 6s infinite ease-in-out;
+      top: 100%;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-150vh); }
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<audio id="bgMusic" autoplay muted>
+  <source src="itni_si_baat_hai.mp3" type="audio/mpeg" />
+</audio>
+
+<script>
+  document.addEventListener("click", function () {
+    const audio = document.getElementById("bgMusic");
+    if (audio.paused) {
+      audio.muted = false;
+      audio.play();
+    }
+  });
+</script>
+
+<div class="heart">❤️</div>
+
+<div class="photo">
+  <img src="jacqueline.jpg" alt="Jacqueline" />
+</div>
+
+<h1>Will you be mine, Jacqueline?</h1>
+
+<div class="buttons">
+  <button id="yesBtn">Yes 💖</button>
+  <button id="noBtn">No 🙈</button>
+</div>
+
+<div class="letter" onclick="document.getElementById('letterPopup').style.display='block'">✉️</div>
+
+<div id="letterPopup">
+  <div id="closeLetter" onclick="document.getElementById('letterPopup').style.display='none'">❌</div>
+  <h2>My Dearest Jacqueline</h2>
+  <p style="white-space: pre-line; text-align: left;">
+Kya aapko yaad hai wo pal... jab hum ek random Snapchat request ke jariye mile the?
+Na koi expectation, na koi plan.
+Bas hi- hello, ek photo, ek vibe... aur ek silsila shuru ho gaya,
+Jo aaj tak mere dil ka sabse pyaara hissa hai.
+
+Fir Instagram pe baatein badhi...
+Aur baaton mein chhup gaya ek rishta,
+Ek aisa rishta jahan main aapko janta gaya,
+Aur aap meri khamosiyon ko padhna seekh gayi...
+
+Yaad hai aapne kaha tha –
+"Main bahut akeli thi... ek raat maine dil se dua maangi thi,
+Ki koi ho... jo mujhe samjhe, mehsoos kare..."
+
+Aur us dua ka jawaab... Main tha.
+Kya yeh kismat thi?
+Ya woh universe ki ek khubsurat saazish?
+
+Aap overthink karti ho... main bhi.
+Aap khud se ladti ho... main bhi.
+Lekin aapne mujhe khud pe bharosa karna sikhaya.
+Aapne har baar mujhe meri hi aankhon mein perfect dikhaya.
+
+Aapne kaha tha — "You're a fully green forest"
+Aur tab mujhe samajh aaya —
+Aap uss jungle ki tarah ho jahan main kho jana chahta hoon,
+Jahan har raasta, har saans, aapki khushboo se bhari ho.
+
+Hum long distance mein hain...
+Par phir bhi dil itna paas hai ki
+Har reel, har story, har reaction mein aap hoti ho.
+Main aapka har mention dekhta hoon —
+Aur lagta hai jaise duniya ruk gayi ho, sirf aapki awaaj sunne ke liye.
+
+Toh Jacqueline, meri jaan...
+Aaj main sirf itna kehna chahta hoon —
+
+"Aap meri dua ho,
+Aap mera sukoon ho,
+Aap meri khud se baat ho,
+Aap meri har subah ki roshni ho.
+Jacqueline...
+Kya Aap zindagi bhar ke liye meri ho jaogi?"
+
+💍 Will you marry me? 💍
+
+– Kaushal
+  </p>
+</div>
+
+<div id="finalMsg">🎉 Welcome to Forever ❤️ Jacqueline! 🎉</div>
+
+<script>
+  const noBtn = document.getElementById("noBtn");
+  const yesBtn = document.getElementById("yesBtn");
+  const finalMsg = document.getElementById("finalMsg");
+
+  noBtn.addEventListener("mouseover", () => {
+    const x = Math.random() * window.innerWidth * 0.8;
+    const y = Math.random() * window.innerHeight * 0.8;
+    noBtn.style.position = "absolute";
+    noBtn.style.left = x + "px";
+    noBtn.style.top = y + "px";
+  });
+
+  yesBtn.onclick = () => {
+    finalMsg.style.display = "block";
+    confettiEffect();
+    balloonEffect();
+  };
+
+  function confettiEffect() {
+    for (let i = 0; i < 60; i++) {
+      let div = document.createElement("div");
+      div.className = "confetti";
+      div.style.width = "10px";
+      div.style.height = "10px";
+      div.style.background = "#" + Math.floor(Math.random()*16777215).toString(16);
+      div.style.left = Math.random() * window.innerWidth + "px";
+      div.style.top = Math.random() * window.innerHeight + "px";
+      div.style.position = "fixed";
+      div.style.animation = "float 5s ease-in-out";
+      document.body.appendChild(div);
+      setTimeout(() => div.remove(), 5000);
+    }
+  }
+
+  function balloonEffect() {
+    for (let i = 0; i < 20; i++) {
+      let balloon = document.createElement("div");
+      balloon.className = "balloon";
+      balloon.style.width = "30px";
+      balloon.style.height = "40px";
+      balloon.style.borderRadius = "50%";
+      balloon.style.background = "red";
+      balloon.style.left = Math.random() * window.innerWidth + "px";
+      balloon.style.animationDelay = (Math.random() * 5) + "s";
+      document.body.appendChild(balloon);
+      setTimeout(() => balloon.remove(), 7000);
+    }
+  }
+</script>
+
+</body>
+</html>
